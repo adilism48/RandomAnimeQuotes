@@ -72,6 +72,7 @@ class GetQuoteFragment : Fragment() {
             viewModel.newCharacter = binding.tvCharacter.text.toString()
             viewModel.newAnime = binding.tvAnime.text.toString()
             viewModel.addQuote()
+            Toast.makeText(context, "Quote added", Toast.LENGTH_SHORT).show()
         }
 
         iBSaved.setOnClickListener {
